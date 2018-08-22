@@ -1,0 +1,84 @@
+
+/*main*/
+.banner{
+    position:relative; min-height: 400px; background: green;
+    &-box{
+        height:400px; width:100%;
+        .bx-wrapper,.bx-viewport{
+            height:100%!important;
+        }
+    }
+
+    &-list{
+        height:100%;
+        &-item{
+            height:100%; overflow: hidden;
+        }
+    }
+    .bx-controls{
+        position:relative;
+        width: 1160px; height:0;
+        margin: 0 auto;
+        bottom:80px;
+        .bx-prev,.bx-next{
+            display: none;
+        }
+        .bx-pager {
+            display: inline-block; float: left; height: 20px;
+            .bx-pager-item {display: inline-block; float:left; width:31px; height: 20px;
+                > a {display: inline-block; float:left; width:20px; height: 20px; background: transparent; border:2px solid #fff; border-radius: 20px; @include hide;}
+                > a.active {background: #fff;}
+            }
+        }
+        .bx-start,.bx-stop{
+            position: absolute; top:0; left:125px;
+            display:block;
+            width:20px;
+            height:20px;
+            background:#fff;
+            border-radius:20px;
+             @include hide;
+        }
+        .bx-prev{
+             background-position: -60px -113px;
+        }
+        .bx-next{
+            background-position: -104px -113px;
+        }
+        .bx-start:after{
+            position: absolute; top: 5px; left:8px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 0 5px 6px;
+            border-color: transparent transparent transparent $baseColor; content: '';
+        }
+        .bx-stop:after{
+            position: absolute; top: 6px; left:7px;
+            width: 6px; height:8px; background: transparent; border-left: 2px solid  $baseColor; border-right: 2px solid  $baseColor;
+            content: '';
+        }
+    }
+}
+
+.main-business{position:relative; min-height: 400px; background: blue;
+}
+
+.main-board {
+   .board-list {width:1120px; margin: 0 auto;
+    > li { width:33%; float: left;}
+   }
+   .notice_wrap {position: relative; }
+   .notice_wrap h2 {position: relative;width: 100%;height: 30px;padding-left: 15px;color: #000;font-size: 13px;font-weight: 700;line-height: 30px; border-bottom: 1px solid #b9b9b9; }
+   .notice_list {width: 100%;height: 100%;padding: 10px 15px; }
+   .notice_list li {position: relative;width: 100%;height: 28px; }
+   .notice_list li:first-child {border-top: 0; }
+   .notice_list li a {display: block;width: 100%;height: 100%; }
+   .notice_list li:hover {background: #f2f2f25e; }
+   .notice_list li a .title {position: relative;max-width: calc(100% - 20px);display: inline-block;padding-right: 20px;font-size: 13px;color: #63656a;line-height: 27px;overflow: hidden;-o-text-overflow: ellipsis; text-overflow: ellipsis;white-space: nowrap; }
+   .notice_list li a.new span.title:after {position: absolute;top: 7px;right: 0;display: block;font-size: 10px;width: 15px;height: 15px;line-height: 15px;color: #fff;font-weight: 700;text-align: center;background: #4a63a1;content: 'N';border-radius: 100%; }
+   .notice_wrap .btn_more {position: absolute;display: block;top: 7px;right: 5px;width: 16px;height: 16px;background: transparent; }
+   .notice_wrap .btn_more span {position: relative;display: inline-block;width: 100%;height: 100%;overflow: hidden;font-size: 0;line-height: 0;text-indent: -9999px; }
+   .notice_wrap .btn_more span:before {position: absolute;display: block;width: 2px;height: 14px;top: 50%;left: 50%;margin: -7px 0 0 -1px;background: #333;content: ''; }
+   .notice_wrap .btn_more span:after {position: absolute;display: block;width: 14px;height: 2px;top: 50%;left: 50%;margin: -1px 0 0 -7px;background: #333;content: ''; }
+}

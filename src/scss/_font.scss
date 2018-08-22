@@ -1,0 +1,60 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/*******************************
+*    NotoSans
+********************************/
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('font/NotoSansKR-Thin-Hestia.eot'); /* IE9 Compat Modes */
+  src: url('font/NotoSansKR-Thin-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/NotoSansKR-Thin-Hestia.woff') format('woff'); /* Modern Browsers */
+  font-style:   normal;
+  font-weight:  300;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('font/NotoSansKR-Light-Hestia.eot'); /* IE9 Compat Modes */
+  src: url('font/NotoSansKR-Light-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/NotoSansKR-Light-Hestia.woff') format('woff'); /* Modern Browsers */
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('font/NotoSansKR-Regular-Hestia.eot'); /* IE9 Compat Modes */
+  src: url('font/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/NotoSansKR-Regular-Hestia.woff') format('woff'); /* Modern Browsers */
+  font-style:   normal;
+  font-weight:  600;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('font/NotoSansKR-Medium-Hestia.eot'); /* IE9 Compat Modes */
+  src: url('font/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/NotoSansKR-Medium-Hestia.woff') format('woff'); /* Modern Browsers */
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('font/NotoSansKR-Bold-Hestia.eot'); /* IE9 Compat Modes */
+  src: url('font/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/NotoSansKR-Bold-Hestia.woff') format('woff'); /* Modern Browsers */
+  font-style:   normal;
+  font-weight:  800;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('font/NotoSansKR-Black-Hestia.eot'); /* IE9 Compat Modes */
+  src: url('font/NotoSansKR-Black-Hestia.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/NotoSansKR-Black-Hestia.woff') format('woff'); /* Modern Browsers */
+  font-style:   normal;
+  font-weight:  900;
+}

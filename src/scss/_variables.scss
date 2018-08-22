@@ -1,0 +1,34 @@
+// 템플릿 공통 컬러
+$baseColor: #096f94;
+$baseDeepColor :#044d67;
+
+$baseColor2: #b45e02;
+$baseDeepColor2 :#975004;
+
+
+
+$pointColor:#026bc5;
+$pointColor2: #ff6e35;
+$pointColor3: #79bf28;
+$pointColor4: #a754d7;
+
+
+$fontColor: #333;
+$lineColor: #d9d9d9;
+
+@mixin line1 {
+  border:1px solid $lineColor;
+}
+
+@mixin clearfix {
+  content:'';
+  clear:both;
+  display:block;
+}
+
+@mixin hide {
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}

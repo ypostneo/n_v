@@ -1,0 +1,56 @@
+
+@media all and (max-width:1160px){
+    html {font-size: 13px;}
+    .content {width:100%; margin: 0;}
+    header .logo { margin-right: 20px;}
+    header .gnb > li > a {padding: 0 12px;}
+
+}
+@media all and (max-width:1024px){
+}
+@media all and (max-width:1023px){
+    .top-small-menu {display: none;}
+    header {height: 58px;}
+    header {position:relative; height: 57px; line-height: 57px;}
+    header .header-inbox {width:100%; height: 100%;}
+    header .logo {width:146px; height: 100%;}
+    header .logo a {background-size: 146px 31px;}
+    .mobile-btn-area {display: block; position: absolute; top: 0; right:10px; padding-right:34px; background: red;}
+    .mobile-btn-area .mobile-menu-open {position:absolute; top:22px; right:0; display: inline-block; width:20px; height: 20px;}
+    .mobile-btn-area .mobile-menu-open:after {position:absolute; top:10px; right:0; display: block; width:13px; height: 2px; background: $baseColor; content: '';}
+    .mobile-btn-area .mobile-menu-open > span {display: block; width:20px; height: 7px; border-top:2px solid $baseColor; border-bottom:2px solid $baseColor; @include hide;}
+    header .nav-wrap {display: block; position: fixed; z-index:999; top:0; right:-258px; bottom:0; width:258px; height:100%; padding-top:100px;  background: url("../images/logo.png") no-repeat center 15px;
+        background-size: 120px auto; background-color: $baseDeepColor; line-height: 1; transition: all .2s; box-shadow:none;}
+    .header-inbox.open .nav-wrap{right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);}
+    .header-inbox.open:before {display:block; position: fixed; z-index:998; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); content: '';}
+    .nav-wrap > nav {width:100%; height: 100%; background: #fff;}
+    .nav-wrap > nav > .gnb {width:100%; height: 100%;}
+    .nav-wrap > nav > .gnb > li {position:relative; width:100%; border-bottom:1px solid #d9d9d9;}
+    header .gnb > li > a {width:100%; color: #000; font-size: 1.154rem;line-height: 40px; font-weight: 400; text-align: left;}
+    header .gnb > li.active  {background:$baseColor;}
+    header .gnb > li.active > a {color: #fff !important;}
+    header .gnb > li > .gnb-dep2 {position: relative; top:auto; left:auto; display: block; width:100%; border-radius:0; box-shadow:none; transition: all .4s; transition-delay: .1s;}
+    header .gnb > li > .gnb-dep2 > li {}
+    header .gnb > li > .gnb-dep2 > li > a {position:relative; font-size: 1rem; color: #666; font-weight: 400; line-height: 25px;padding: 0 26px;}
+    header .gnb > li > .gnb-dep2 > li > a:before {position: absolute; top:10px; left:15px; width:2px; height: 2px; background:#666; content: '';} 
+   
+    .gnb > li.has-children:before {display: block; position:absolute; right:20px; top:16px; width: 0; height: 0; border-style: solid; border-width: 6px 6px 0 6px; border-color: #666666  transparent transparent transparent; content: '';}
+    .gnb > li.has-children:after {display: block; position:absolute; right:20px; top:14px; width: 0; height: 0; border-style: solid; border-width: 6px 6px 0 6px; border-color: #fff transparent transparent transparent; content: '';}
+    .gnb > li.has-children.active:before {border-color: #fff transparent transparent transparent;}
+    .gnb > li.has-children.active:after {border-color: $baseColor transparent transparent transparent;}
+    .nav-wrap .mobile-menu-close {z-index:999; display: block; position: fixed; top:0; right:-258px;width: 26px;height: 26px; transition: all .2s;}
+    .header-inbox.open .nav-wrap .mobile-menu-close {position:fixed; top:0; right:258px; width: calc(100% - 258px); height: 100%;}
+    .nav-wrap .mobile-menu-close > span {display: block;position: absolute; top:15px; right:15px; width: 26px;height: 26px;overflow: hidden;font-size: 0;line-height: 0;text-indent: -9999px; }
+    .nav-wrap .mobile-menu-close > span:before {position: absolute;top: 0;left: 12px;width: 2px;height: 28px;background: #fff;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);content: ''; }
+    .nav-wrap .mobile-menu-close > span:after {position: absolute;top: 0;right: 12px;width: 2px;height: 28px;background: #fff;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);content: ''; }
+}
+
+
+@media all and (max-width:767px){
+}
+
+@media all and (max-width:359px){
+}
+
+
+
