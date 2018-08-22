@@ -1,0 +1,2040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>VOICEYE 작업 현황</title>
+		<link rel="stylesheet" type="text/css" href="./status.css" />
+		<style type="text/css">
+            body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, p, blockquote, th, td, input, select, textarea, button, fieldset, form, legend, a, span, ul, ol, li {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body, input, textarea, select, table, p, a, span, button {
+                font-size: 12px;
+            }
+            body {
+                -webkit-text-size-adjust: none
+            }
+            strong, th, h1, h2, h3, h4, h5, h6 {
+                font-weight: bold;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse
+            }
+            img, fieldset {
+                border: 0;
+                vertical-align: top
+            }
+            ul, ol {
+                list-style: none
+            }
+            em, address {
+                font-style: normal
+            }
+            caption, legend {
+                font-size: 0;
+                line-height: 0;
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                overflow: hidden
+            }
+            button {
+                cursor: pointer;
+                margin: 0;
+                padding: 0;
+                background: none;
+                border: 0;
+                outline: 0;
+            }
+            a {
+                text-decoration: none
+            }
+            a:hover, a:active, a:focus {
+                text-decoration: none
+            }
+            ul, ol {
+                zoom: 1
+            }
+            ul:after, ol:after {
+                content: '';
+                clear: both;
+                display: block
+            }
+            textarea, input {
+                -webkit-apperence: none;
+            }
+            input:focus {
+                outline: none;
+            }
+
+            * {
+                -webkit-text-size-adjust: none
+            }
+            HTML {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            BODY {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            DIV {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            SPAN {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            OBJECT {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            IFRAME {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            H1 {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            H2 {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            H3 {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            H4 {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            H5 {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            H6 {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            P {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            BLOCKQUOTE {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            PRE {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            ABBR {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            ADDRESS {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            CITE {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            CODE {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            DEL {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            DFN {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            EM {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            IMG {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            INS {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            KBD {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            Q {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            SAMP {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            SMALL {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            STRONG {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            SUB {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            SUP {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            VAR {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            B {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            I {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            DL {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            DT {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            DD {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            OL {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            UL {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            LI {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            FIELDSET {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            FORM {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            LABEL {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            LEGEND {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            TABLE {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            CAPTION {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            TBODY {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            TFOOT {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            THEAD {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            TR {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            TH {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            TD {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            article {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            aside {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            canvas {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            details {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            figcaption {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            figure {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            footer {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            header {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            hgroup {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            MENU {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            nav {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            section {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            summary {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            time {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            mark {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            audio {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            video {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            BUTTON {
+                BORDER-BOTTOM: 0px;
+                BORDER-LEFT: 0px;
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                OUTLINE-STYLE: none;
+                OUTLINE-COLOR: invert;
+                PADDING-LEFT: 0px;
+                OUTLINE-WIDTH: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: baseline;
+                BORDER-TOP: 0px;
+                BORDER-RIGHT: 0px;
+                PADDING-TOP: 0px
+            }
+            BODY {
+                PADDING-BOTTOM: 2em;
+                LINE-HEIGHT: 1.7;
+                PADDING-LEFT: 2em;
+                PADDING-RIGHT: 2em;
+                FONT-FAMILY: AppleGothic, "나눔고딕", NanumGothic, "맑은 고딕", MalgunGothic, dotum, "돋움", gulim, "굴림";
+                FONT-SIZE: 13px;
+                PADDING-TOP: 2em
+            }
+            article {
+                DISPLAY: block
+            }
+            aside {
+                DISPLAY: block
+            }
+            details {
+                DISPLAY: block
+            }
+            figcaption {
+                DISPLAY: block
+            }
+            figure {
+                DISPLAY: block
+            }
+            footer {
+                DISPLAY: block
+            }
+            header {
+                DISPLAY: block
+            }
+            hgroup {
+                DISPLAY: block
+            }
+            MENU {
+                DISPLAY: block
+            }
+            nav {
+                DISPLAY: block
+            }
+            section {
+                DISPLAY: block
+            }
+            UL {
+                LIST-STYLE-TYPE: none;
+                LIST-STYLE-IMAGE: none
+            }
+            OL {
+                LIST-STYLE-POSITION: inside;
+                LIST-STYLE-TYPE: decimal
+            }
+            BLOCKQUOTE {
+                QUOTES: none
+            }
+            Q {
+                QUOTES: none
+            }
+            PRE {
+                DISPLAY: inline-block
+            }
+            BLOCKQUOTE:before {
+                CONTENT: none
+            }
+            BLOCKQUOTE:after {
+                CONTENT: none
+            }
+            Q:before {
+                CONTENT: none
+            }
+            Q:after {
+                CONTENT: none
+            }
+            A {
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                PADDING-LEFT: 0px;
+                PADDING-RIGHT: 0px;
+                BACKGROUND: none transparent scroll repeat 0% 0%;
+                VERTICAL-ALIGN: baseline;
+                PADDING-TOP: 0px
+            }
+            TABLE {
+                BORDER-SPACING: 0;
+                BORDER-COLLAPSE: collapse;
+                TABLE-LAYOUT: fixed
+            }
+            TABLE CAPTION {
+                TEXT-ALIGN: left;
+                PADDING-BOTTOM: 0.5em;
+                LINE-HEIGHT: 1.3;
+                PADDING-LEFT: 0px;
+                PADDING-RIGHT: 0px;
+                FONT-SIZE: 1em;
+                VERTICAL-ALIGN: middle;
+                FONT-WEIGHT: 700;
+                PADDING-TOP: 0.5em
+            }
+            INPUT {
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                PADDING-LEFT: 0px;
+                PADDING-RIGHT: 0px;
+                VERTICAL-ALIGN: middle;
+                PADDING-TOP: 0px
+            }
+            SELECT {
+                PADDING-BOTTOM: 0px;
+                MARGIN: 0px;
+                PADDING-LEFT: 0px;
+                PADDING-RIGHT: 0px;
+                VERTICAL-ALIGN: middle;
+                PADDING-TOP: 0px
+            }
+            BUTTON {
+                CURSOR: pointer
+            }
+            SUB {
+                FONT-SIZE: smaller
+            }
+            H1 {
+                FONT-SIZE: 1.45em
+            }
+            H2 {
+                FONT-SIZE: 1.3em
+            }
+            H3 {
+                FONT-SIZE: 1.2em
+            }
+            DD {
+                PADDING-LEFT: 3em
+            }
+            TH {
+                VERTICAL-ALIGN: middle;
+                WORD-BREAK: break-all
+            }
+            TD {
+                VERTICAL-ALIGN: middle;
+                WORD-BREAK: break-all
+            }
+            .hidden {
+                POSITION: absolute;
+                TOP: -99999em;
+                LEFT: -99999em
+            }
+
+            /*
+             @media all and (max-width: 479px){
+             .projctInfo tbody, .projctInfo tbody tr{display:block}
+             .projctInfo th, .projctInfo td{float:left}
+             .projctInfo th{padding-left:2%;padding-right:2%;width:96%}
+             .projctInfo td{padding-left:4%;padding-right:2%;width:94%}
+             }
+             @media all and (max-width: 959px){
+             .scheduler tbody td{float:left;padding-left:2%;padding-right:2%;width:96%}
+
+             .outputList th, .outputList td{float:left;padding-left:2%;padding-right:2%;width:96%}
+
+             .outputList tbody td:nth-last-child(6),
+             .outputList .complete td:nth-last-child(6),
+             .outputList .during td:nth-last-child(6),
+             .outputList .deleted td:nth-last-child(6){font-weight:600;background-color:#CCC;text-decoration:none}
+             .outputList tbody td.type:before{content:"type : "}
+             .outputList tbody td:nth-last-child(5){padding-left:3%;width:95%}
+             .outputList tbody td:nth-last-child(5):before{content:"》 ";margin-left:-.5em}
+             .outputList tbody td:nth-last-child(4){padding-left:6%;border-top:1px dashed #AAA;width:92%;}
+             .outputList tbody td:nth-last-child(4):before{content:"〉 ";margin-left:-1.5em}
+             .outputList tbody td:nth-last-child(5):empty, .outputList tbody td:nth-last-child(4):empty{display:none}
+             .outputList tbody td:nth-last-child(1),
+             .outputList tbody td:nth-last-child(2),
+             .outputList tbody td:nth-last-child(3){padding-left:8%;width:90%;}
+             .outputList tbody td:nth-last-child(1):before{content:"· Memo : ";margin-left:-1.5em;display:block;font-weight:600;color:#777}
+             .outputList tbody td:nth-last-child(2):before{content:"· FileName : ";margin-left:-1.5em;display:block;font-weight:600;color:#777}
+             .outputList tbody td:nth-last-child(3):before{content:"· Directory : ";margin-left:-1.5em;display:block;font-weight:600;color:#777}
+             .outputList tbody td:nth-last-child(4) ~ td{padding-left:6%;width:92%}
+
+             .devScriptList th, .devScriptList td{float:left;padding-left:2%;padding-right:2%;width:96%}
+             .devScriptList tbody td:nth-last-child(1),
+             .devScriptList tbody td:nth-last-child(2),
+             .devScriptList tbody td:nth-last-child(3){padding-left:6%;width:92%;border-top:0}
+             .devScriptList tbody td:nth-last-child(3){border-top: 1px dashed #AAA}
+             .devScriptList tbody td:nth-last-child(4) + td{border-top:0}
+             .devScriptList tbody td:nth-last-child(1):before{content:"· Memo : ";margin-left:-1.5em;display:block;font-weight:600;color:#777}
+             .devScriptList tbody td:nth-last-child(2):before{content:"· 파일위치 : ";margin-left:-1.5em;display:block;font-weight:600;color:#777}
+             .devScriptList tbody td:nth-last-child(3):before{content:"· 기능 : ";margin-left:-1.5em;display:block;font-weight:600;color:#777}
+             }
+             */
+            /* 정보 */
+            .info {
+                BORDER-BOTTOM: #888 1px solid;
+                BORDER-LEFT: #888 1px solid;
+                MARGIN: 0px 0px 3em;
+                WIDth: 100%;
+                BORDER-TOP: #888 1px solid;
+                BORDER-RIGHT: #888 1px solid
+            }
+            .info CAPTION {
+                FONT-WEIGHT: 400
+            }
+            .info COL.header {
+                WIDth: 180px
+            }
+            .info th {
+                BORDER-BOTTOM: #aaa 1px dashed;
+                TEXT-ALIGN: left;
+                BORDER-LEFT: #aaa 1px dashed;
+                PADDING-BOTTOM: 0.25em;
+                PADDING-LEFT: 1em;
+                PADDING-RIGHT: 1em;
+                BORDER-TOP: #aaa 1px dashed;
+                BORDER-RIGHT: #aaa 1px dashed;
+                PADDING-TOP: 0.25em
+            }
+            .info td {
+                BORDER-BOTTOM: #aaa 1px dashed;
+                TEXT-ALIGN: left;
+                BORDER-LEFT: #aaa 1px dashed;
+                PADDING-BOTTOM: 0.25em;
+                PADDING-LEFT: 1em;
+                PADDING-RIGHT: 1em;
+                BORDER-TOP: #aaa 1px dashed;
+                BORDER-RIGHT: #aaa 1px dashed;
+                PADDING-TOP: 0.25em
+            }
+            .info th {
+                BACKGROUND-COLOR: #dedede;
+                BORDER-RIGHT: 0px
+            }
+            .info td {
+                BORDER-LEFT: 0px
+            }
+
+            .work {
+                BORDER-BOTTOM: #888 1px solid;
+                BORDER-LEFT: #888 1px solid;
+                MARGIN: 0px 0px 3em;
+                WIDth: 100%;
+                BORDER-TOP: #888 1px solid;
+                BORDER-RIGHT: #888 1px solid
+            }
+            .work CAPTION {
+                TEXT-ALIGN: right
+            }
+            .work th {
+                BORDER-BOTTOM: #aaa 1px solid;
+                BORDER-LEFT: #aaa 1px solid;
+                PADDING-BOTTOM: 0.25em;
+                PADDING-LEFT: 0.5em;
+                PADDING-RIGHT: 0.5em;
+                BORDER-TOP: #aaa 1px solid;
+                BORDER-RIGHT: #aaa 1px solid;
+                PADDING-TOP: 0.25em
+            }
+            .work td {
+                BORDER-BOTTOM: #aaa 1px solid;
+                BORDER-LEFT: #aaa 1px solid;
+                PADDING-BOTTOM: 0.25em;
+                PADDING-LEFT: 0.5em;
+                PADDING-RIGHT: 0.5em;
+                BORDER-TOP: #aaa 1px solid;
+                BORDER-RIGHT: #aaa 1px solid;
+                PADDING-TOP: 0.25em
+            }
+            .work th {
+                BACKGROUND-COLOR: #c0c0c0;
+                BORDER-BOTTOM-WIDth: 3px
+            }
+            .work td {
+                BACKGROUND-COLOR: #fff;
+                VERTICAL-ALIGN: middle
+            }
+
+            /* 진행상황 */
+            .work .complete td {
+                BACKGROUND-COLOR: #ececec
+            }
+            .work .during td {
+                BACKGROUND-COLOR: #dafeb4
+            }
+            .work .deleted td {
+                BACKGROUND-COLOR: #fe6565;
+                TEXT-DECORATION: line-through
+            }
+            .work tr.tit td {
+                border-top: 2px solid #333;
+            }
+            .work {
+                width: 100%;
+                min-width: 900px;
+            }
+            .work .c1 {
+                width: 100px;
+            }
+            .work .c2 {
+                width: 130px;
+            }
+            .work .c3 {
+                width: 100px;
+            }
+            .work .c4 {
+                width: 100px;
+            }
+            .work .c5 {
+                width: 180px;
+            }
+            .work .c6 {
+                width: 40px;
+                text-align: center;
+            }
+            .work .c7 {
+                width: 40px;
+                text-align: center;
+            }
+            .work .c8 {
+                width: *;
+            }
+            .work tr td:nth-child(6) {
+                text-align: center;
+            }
+            .work tr td:nth-child(7) {
+                text-align: center;
+            }
+            .work tr td:nth-child(8) {
+                text-align: left;
+            }
+            .work tr td:nth-child(9) {
+                text-align: center;
+            }
+            .work tr td:nth-child(10) {
+                text-align: center;
+            }
+            .work tr td:nth-child(11) {
+                text-align: center;
+            }
+            .work tr td:nth-child(12) {
+                text-align: center;
+            }
+            .work tr td span {
+                color: #666;
+            }
+
+            @media all and (min-width: 900px) {
+                .work .c1 {
+                    width: 8%;
+                }
+                .work .c2 {
+                    width: 15%;
+                }
+                .work .c3 {
+                    width: 12%;
+                }
+                .work .c4 {
+                    width: 10%;
+                }
+                .work .c5 {
+                    width: 15%;
+                }
+                .work .c6 {
+                    width: 4%;
+                }
+                .work .c7 {
+                    width: 4%;
+                }
+                .work .c8 {
+                    width: *;
+                }
+            }
+
+            .work.link {
+                min-width: 100%
+            }
+            .work.link .c1 {
+            }
+            .work.link .c2 {
+            }
+            .work.link .c3 {
+            }
+            .work.link .c4 {
+                width: auto;
+                display: none;
+            }
+            .work.link .c5 {
+                width: 50%;
+            }
+            .work.link .c6 {
+                width: auto;
+                display: none;
+            }
+            .work.link .c7 {
+                width: auto;
+                display: none;
+            }
+            .work.link .c8 {
+                width: auto;
+                display: none;
+            }
+            .work.link tr td:nth-child(1) {
+                width: 20%;
+            }
+            .work.link tr td:nth-child(2) {
+            }
+            .work.link tr td:nth-child(3) {
+            }
+            .work.link tr td:nth-child(4) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(5) {
+                width: 60%;
+            }
+            .work.link tr td:nth-child(6) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(7) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(8) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(9) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(10) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(11) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+            .work.link tr td:nth-child(12) {
+                width: 1px;
+                overflow: hidden;
+                display: none;
+            }
+
+            h2.tit {
+                position: relative;
+            }
+            h2.tit a {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 1px solid #999;
+                padding: 3px 10px;
+                background-color: #999;
+                font-size: 11px;
+            }
+
+            #close {
+                display: none;
+                margin-bottom: 50px;
+                border-bottom: 1px dotted #ccc;
+                overflow: hidden;
+            }
+            #close:after {
+                clear: both;
+            }
+            #close > h2.tit {
+                height: 27px;
+            }
+
+		</style>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".onlylink").bind("click", function() {
+					$(".work").toggleClass("link");
+				});
+			});
+
+			function toggle_object(post_id) {
+				var obj = document.getElementById(post_id);
+				if (!obj)
+					return;
+				if (obj.style.display == "block") {
+					obj.style.display = 'none';
+				} else {
+					obj.style.display = "block";
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+		<h2>프로젝트 정보</h2>
+		<table class="info">
+			<caption>
+				<span class="hidden">프로젝트 기본 정보</span>
+			</caption>
+			<colgroup>
+				<col class="header" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">1. 프로젝트명</th>
+					<td>ITFunding</td>
+				</tr>
+				<tr>
+					<th scope="row">2. 인코딩 방식</th>
+					<td>utf-8</td>
+				</tr>
+				<tr>
+					<th scope="row">3. dtd 사용</th>
+					<td>Html5</td>
+				</tr>
+				<tr>
+					<th scope="row">4. 크로스 브라우징</th>
+					<!--a href="/" onclick="toggle_object('close'); return false;">4. 크로스 브라우징</a-->
+					<td> IE10,Chrome,Firefox,Safari,Opera </td>
+				</tr>
+				<tr>
+					<th scope="row">5. 해상도(반응형 웹)</th>
+					<td> 1280(MONITOR), 1024px(NETBOOK), 768px(TABLET), 640px/360px/320px(SMARTPHONE) </td>
+				</tr>
+				<tr>
+					<th scope="row">6. 웹접근성</th>
+					<td> 웹접근성 준수 </td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="tit">퍼블리싱 진척도 (html 페이지 기준) <a href="#" class="onlylink">only link</a></h2>
+		<p style="text-align:right">
+			<span >● 퍼블 완료</span>
+		</p>
+		<table class="work">
+			<colgroup>
+				<col class="c1" />
+				<col class="c2" />
+				<col class="c3" />
+				<col class="c4" />
+				<col class="c5" />
+				<col class="c6" />
+				<col class="c7" />
+				<col class="c8" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" class="c1">1Dep</th>
+					<th scope="col" class="c2">2Dep</th>
+					<th scope="col" class="c3">3Dep</th>
+					<th scope="col" class="c4">Dir</th>
+					<th scope="col" class="c5">FileName</th>
+					<th scope="col" class="c6">ing</th>
+					<th scope="col" class="c7">date</th>
+					<th scope="col" class="c8">Memo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tit">
+					<td>main</td>
+					<td></td>
+					<td>&nbsp;</td>
+					<td></td>
+					<td><a href="index.html" target="_blank">index.html</a></td>
+					<td>●</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="tit">
+					<td>BUSINESS</td>
+					<td>주요 사업분야</td>
+					<td>&nbsp;</td>
+					<td></td>
+					<td><a href="business.html" target="_blank">business.html</a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>시각장애인 정보 접근</td>
+					<td>법적근거</td>
+					<td></td>
+					<td><a href="law.html" target="_blank">law.html</a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>표준규격</td>
+					<td></td>
+					<td><a href="standard_spec.html" target="_blank">standard_spec.html</a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>인터넷 제증명 발급</td>
+					<td></td>
+					<td></td>
+					<td><a href="internet.html" target="_blank">internet.html</a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>모바일 진위 확인</td>
+					<td></td>
+					<td></td>
+					<td><a href="mobile_tr.html" target="_blank">mobile_tr.html</a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="tit">
+					<td>PRODUCT</td>
+					<td>시각장애인 정보 접근</td>
+					<td>VOICEYE (H/W)</td>
+					<td></td>
+					<td><a href="voiceye_hw.html" target="_blank">voiceye_hw.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>VOICEYE Maker(S/W)</td>
+					<td></td>
+					<td><a href="voiceye_maker.html" target="_blank">voiceye_maker.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>VOICECode</td>
+					<td></td>
+					<td><a href="voiceye_code.html" target="_blank">voiceye_code.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>VOICEYE APP</td>
+					<td></td>
+					<td><a href="voiceye_app.html" target="_blank">voiceye_app.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="tit">
+					<td>SUPPORT</td>
+					<td>공지사항</td>
+					<td></td>
+					<td></td>
+					<td><a href="#" target="_blank"></a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				<tr>
+					<td></td>
+					<td>FAQ</td>
+					<td></td>
+					<td></td>
+					<td><a href="faq.html" target="_blank">faq.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>자료실</td>
+					<td></td>
+					<td></td>
+					<td><a href="" target="_blank"></a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>고객센터</td>
+					<td></td>
+					<td></td>
+					<td><a href="" target="_blank"></a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				</tr>
+				<tr class="tit">
+					<td>COMPANY</td>
+					<td>회사소개</td>
+					<td>인사말</td>
+					<td></td>
+					<td><a href="voiceye_inc.html" target="_blank">voiceye_inc.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>회사연혁</td>
+					<td></td>
+					<td><a href="history.html" target="_blank">history.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>CI/BI소개</td>
+					<td></td>
+					<td><a href="voiceye_ci.html" target="_blank">voiceye_ci.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>특허/인증</td>
+					<td></td>
+					<td></td>
+					<td><a href="patent.html" target="_blank">patent.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>글로벌 파트너</td>
+					<td></td>
+					<td></td>
+					<td><a href="global.html" target="_blank">global.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>주요고객사</td>
+					<td></td>
+					<td></td>
+					<td><a href="customer.html" target="_blank">customer.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>오시는길</td>
+					<td></td>
+					<td></td>
+					<td><a href="contact_us.html" target="_blank">contact_us.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
