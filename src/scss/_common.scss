@@ -115,6 +115,10 @@ header{width:100%; background:#fff; border-bottom:1px solid $lineColor; transiti
  .top-small-menu {z-index:101; position: absolute;top:3px; right:0;
   > ul {display: inline-block; text-align: right;}
   > ul > li {display: inline-block;} 
+  .sitemap {display: block; position: relative; width:20px; height: 18px; background: #333;}
+  .sitemap > span { position: absolute; top:0; left:4px; width:12px; height: 19px; border-left:4px solid #fff; border-right:4px solid #fff; @include hide; background: transparent;}
+  .sitemap:after { position: absolute; top:4px; left:0; width:20px; height: 10px; border-top:3px solid #fff; border-bottom:3px solid #fff;background: transparent; content: '';}
+  .sitemap:hover {background: $baseColor;}
  }
 }
 .mobile-btn-area, .mobile-menu-close {display: none;}
@@ -231,3 +235,4 @@ header{width:100%; background:#fff; border-bottom:1px solid $lineColor; transiti
 .pagination > li.last:hover > a:before {border-color: transparent transparent transparent $baseColor;}
 
 /*footer*/
+

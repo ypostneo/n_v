@@ -527,6 +527,37 @@ header {
       text-align: right; }
     header .top-small-menu > ul > li {
       display: inline-block; }
+    header .top-small-menu .sitemap {
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 18px;
+      background: #333; }
+    header .top-small-menu .sitemap > span {
+      position: absolute;
+      top: 0;
+      left: 4px;
+      width: 12px;
+      height: 19px;
+      border-left: 4px solid #fff;
+      border-right: 4px solid #fff;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      text-indent: -9999px;
+      background: transparent; }
+    header .top-small-menu .sitemap:after {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 20px;
+      height: 10px;
+      border-top: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      background: transparent;
+      content: ''; }
+    header .top-small-menu .sitemap:hover {
+      background: #0071bd; }
 
 .mobile-btn-area, .mobile-menu-close {
   display: none; }
