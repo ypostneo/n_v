@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
 	<meta name="mobile-web-app-capable" content="yes">
-	<title>VOICECode &lt; 시각장애인 정보 접근 &lt; PRODUCT -  VOICEYE </title>
+	<title>@@@page_title -  VOICEYE </title>
 	<meta name="apple-mobile-web-app-title" content="보이스아이" />
 	<meta name="robots" content="index,nofollow"/>
 	<meta name="description" content="세계 최대 정보 저장량을 자랑하는 보이스아이"/>
@@ -277,113 +277,61 @@
 	</ul>
 </div>
 						<div class="title-box">
-							<h1>VOICECode</h1>
+							<h1>공지사항/NEWS</h1>
 							<p>
-								VOICECode는 WEB 또는 WAS 서버에 바코드 생성 엔진이 구축되어 보이스아이 바코드 이미지를 생성해 주는 솔루션 입니다.
-								리포팅툴 및 HTML 뷰어 연계를 통한 각종 서식에 적용이 가능합니다
+								보이스아이와 관련한 새로운 소식, 이벤트 등을 알려드립니다.
 							</p>
 						</div>
 						<div class="inner-box">
-							<div class="voiceyecode">
-								<h2>특징</h2>
-								<div class="tb-basic">
-									<table>
+							<div class="notice">
+								<div class="search-head">
+									<div class="sel-dropdown">
+										<select name="s_search" id="s_search">
+											<option value="">전체</option>
+											<option value="">공지</option>
+											<option value="">기사</option>
+										</select>
+									</div>
+									<div class="searchbox">
+										<input name="s_text" type="text" id="s_text"value="<%=s_text%>"/>
+										<a href="#" id="search_btn">검색</a>
+									</div>
+								</div>
+								<div class="board-table list">
+									<table >
 										<caption>
-											국가표준 관련 법령
+											크라우드펀딩 소식 게시판 : 번호, 분류, 제목, 일자
 										</caption>
 										<colgroup>
+											<col style="width:10%">
 											<col style="width:20%">
-											<col style="width:*">
+											<col style="width:auto">
+											<col style="width:10%">
 										</colgroup>
 										<thead>
 											<tr>
-												<th scope="col">특장점</th>
-												<th scope="col">세부사양</th>
+												<th scope="col">번호</th>
+												<th scope="col">분류</th>
+												<th scope="col">제목</th>
+												<th scope="col">일자</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<th scope="row">정보접근성 향상</th>
-												<td>
-												<ul>
-													<li>
-														국내 유일의 시각장애인용 음성 변환 2차원 바코드 표준 규격 지원
-													</li>
-													<li>
-														방송통신 국가표준 '시각장애인의 인쇄물 접근성 향상을 위한 점자&middot;음성 변환용 코드 활용지침'(KS X3095)준수
-													</li>
-													<li>
-														정보통신 단체표준 '시각장애인용 AD 2차원 바코드'(TTAK,KO-06.0180), '시각장애인 인쇄물 음성 변환 출력용 2차원 바코드 규격'(TTAK.KO-06.081) 준수
-													</li>
-												</ul></td>
+												<td>10</td>
+												<td>공지</td>
+												<td class="title"><a href="board_view.html">주식분할안내 및 구주권 제출공고</a></td>
+												<td class="date">2018.04.24</td>
 											</tr>
 											<tr>
-												<th scope="row">안정성</th>
-												<td>
-												<ul>
-													<li>
-														GS인증 제품으로 국내&middot;외 몇 종의 다수 특허 보유
-													</li>
-													<li>
-														바코드 이미지 용량이 매우 작기 때문에 서버에 대한 부하 없음
-													</li>
-													<li>
-														전국민을 대상으로 하는 G4C	전자정부 민원서류, 대법원 판결문 등에서 이미 검증 받은 솔류션
-													</li>
-												</ul></td>
-											</tr>
-											<tr>
-												<th scope="row">APP</th>
-												<td>
-												<ul>
-													<li>
-														스마트폰 APP을 이용하여 음성으로 호환 기능
-													</li>
-													<li>
-														고령자를 위한 독서 확대 기능
-													</li>
-													<li>
-														다문화 가정 및 외국인 관광객을 위한 번역 기능(구글 번역 엔진 사용)
-													</li>
-												</ul></td>
-											</tr>
-											<tr>
-												<th scope="row">호환성</th>
-												<td>
-												<ul>
-													<li>
-														다양한 리포팅 툴과의 연동 지원
-													</li>
-													<li>
-														음성 변환용 2차원 바코드는 현재 출시된 인쇄물 음성변환출력기와 100% 호환되어 음성으로 출력
-													</li>
-												</ul></td>
+												<td>9</td>
+												<td>기사</td>
+												<td class="title"><a href="board_view.html">주식분할안내 및 구주권 제출공고</a></td>
+												<td class="date">2018.04.24</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
-								<h2>구성도</h2>
-								<h3>Server Engine</h3>
-								<img src="../../images/kor/Server_img1.jpg" alt="
-								1. Client PC(업무담당자)가 대상 시스템서버에 발급요청
-								2. 대상 시스템서버의 인터페이스에서 디비서버로 Data Query 주고 받음
-								3. 대상 시스템서버의 인터페이스에서 바코드 생성엔진에 코드 생성 요청, Text 파라미터 Input
-								4. 바코드 생성 엔진에서 대상 시스템서버의 인터페이스로 코드 이미지 Output
-								5. Client PC(업무담당자)가 대상 시스템서버의 인터페이스에서 Data + 코드이미지 다운로드
-								6. 프린터로출력
-								7. 민원인에게 발급
-								8. 민원인 : 발급된 문서의 우측 상단 바코드를 인쇄물 음성변환 출력기 또는 스마트폰으로 해독 하여  음성출력">
-								<h3>Client Engine</h3>
-								<img src="../../images/kor/Client_img1.jpg" alt="
-								1. Client PC(업무담당자)가 DB서버에 발급요청
-								2. DB서버 : Data Query
-								3. DB서버에서 Report 뷰어로 Data 전달
-								4. Report 뷰어에서 바코드 생성엔진으로 Text 파라미터 Input
-								4. 바코드 생성 엔진에서 Report 뷰어로 코드 이미지 Output
-								6. 프린터로출력
-								7. 민원인에게 발급
-								8. 민원인 : 발급된 문서의 우측 상단 바코드를 인쇄물 음성변환 출력기 또는 스마트폰으로 해독 하여  음성출력">
-
 							</div>
 						</div>
 					</section>
