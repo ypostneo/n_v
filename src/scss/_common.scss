@@ -21,19 +21,19 @@ body{min-width: 320px;}
 }
 header{width:100%; background:#fff; border-bottom:1px solid $lineColor; transition:all .3s;
 .header-inbox {position:relative; width:1120px; margin: 0 auto;}
-.logo{float:left; width:157px; height:70px; text-indent:-9999px;
+.logo{float:left; width:157px; height:80px; text-indent:-9999px;
          a{display:block; width:100%; height:100%; background:url('../images/voicye_logo.png') no-repeat center center; /*background-size:157px 33px;*/}
           }
-.nav-wrap {display:inline-block; height: 70px; margin-left: 80px;
+.nav-wrap {display:inline-block; height:80px; margin-left: 80px;
             nav {display:inline-block;}
             &:after{
                 @include clearfix;
             }
         }
-.gnb{width:100%; height: 70px;
-          >li{ position: relative; z-index: 100;  display: inline-block; width:auto; height:auto; float: left;
-              > a {display: inline-block; height:100%; padding: 0 40px; text-align: center; font-size: 1.143em; color: #333; line-height:69px;}
-              >.gnb-dep2 { position: absolute; z-index: 99; display: block; left: 0; top: 100%; width:220px; height:0;padding:0;overflow: hidden;border-radius:0 0 5px 5px;
+.gnb{width:100%; height:79px;  position: relative;  z-index: 100;
+          >li{ display: inline-block; width:auto; height:auto; float: left;
+              > a {display: inline-block; height:100%; padding: 0 60px; text-align: center; font-family:"roboto"; font-weight:400; font-size:20px; color: #333; line-height:79px;}
+              >.gnb-dep2 { position: absolute; z-index: 99; display: block; left: 0; top: 100%; width:100%; height:0;padding:0;overflow: hidden;border-radius:0 0 5px 5px;
                            box-shadow: 0 -5px 0 0 #fff, 0 4px 8px 0 rgba(0,0,0,0.2); background:#fff; transition: all 0.2s;
                          >li{ height:auto;
                              >a { background:#fff; color:#333; display:block;width:100%;height:100%;padding:0 20px 0 25px;font-size:1.071em;font-weight:300;line-height:32px;
