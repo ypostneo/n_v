@@ -243,3 +243,11 @@
    .notice_wrap .btn_more span:before {position: absolute;display: block;width: 2px;height: 14px;top: 50%;left: 50%;margin: -7px 0 0 -1px;background: #333;content: ''; }
    .notice_wrap .btn_more span:after {position: absolute;display: block;width: 14px;height: 2px;top: 50%;left: 50%;margin: -1px 0 0 -7px;background: #333;content: ''; }
 }
+
+/*sub*/
+.notice {
+    .search-head {
+        .searchbox {float: right;}
+    }
+    .search-head:after {@include clearfix;}
+}

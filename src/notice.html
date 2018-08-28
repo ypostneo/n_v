@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-	@@@include('./include/head.html',,{ "page_title":"공지사항/NEWS &lt; SUPPORT" })
+	@@@include('./include/head.html',{ "page_title":"공지사항/NEWS &lt; SUPPORT" })
 	<body>
 		<div class="wrapper">
 			@@@include('./include/header.html')
@@ -19,18 +19,20 @@
 							<div class="notice">
 								<div class="search-head">
 									<div class="sel-dropdown">
-										<select name="s_search" id="s_search">
-											<option value="">전체</option>
-											<option value="">공지</option>
-											<option value="">기사</option>
-										</select>
+										<div class="sel-box">
+											<select name="s_search" id="s_search" class="form-select" title="분류선택">
+												<option value="">전체</option>
+												<option value="">공지</option>
+												<option value="">기사</option>
+											</select>
+										</div>
 									</div>
 									<div class="searchbox">
-										<input name="s_text" type="text" id="s_text"value="<%=s_text%>"/>
+										<input name="s_text" type="text" id="s_text" value="<%=s_text%>" title="검색어">
 										<a href="#" id="search_btn">검색</a>
 									</div>
 								</div>
-								<div class="board-table list">
+								<div class="board-table">
 									<table >
 										<caption>
 											크라우드펀딩 소식 게시판 : 번호, 분류, 제목, 일자
@@ -65,6 +67,7 @@
 										</tbody>
 									</table>
 								</div>
+								@@@include('./include/pagination.html')
 							</div>
 						</div>
 					</section>
@@ -72,5 +75,10 @@
 			</div>
 			@@@include('./include/footer.html')
 		</div>
+		<script>
+			$(function() {
+				$('.form-select').sSelect();
+			});
+		</script>
 	</body>
 </html>

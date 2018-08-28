@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
 	<meta name="mobile-web-app-capable" content="yes">
-	<title>@@@page_title -  VOICEYE </title>
+	<title>공지사항/NEWS &lt; SUPPORT -  VOICEYE </title>
 	<meta name="apple-mobile-web-app-title" content="보이스아이" />
 	<meta name="robots" content="index,nofollow"/>
 	<meta name="description" content="세계 최대 정보 저장량을 자랑하는 보이스아이"/>
@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="assets/js/lib/jquery.min.js"></script>
 	<script src="assets/js/lib/jquery.bxslider.js"></script>
+	<script src="assets/js/lib/jquery.form.stylishSelect.js"></script>
 	<script src="assets/js/scripts.js"></script>
 </head>
 
@@ -286,18 +287,20 @@
 							<div class="notice">
 								<div class="search-head">
 									<div class="sel-dropdown">
-										<select name="s_search" id="s_search">
-											<option value="">전체</option>
-											<option value="">공지</option>
-											<option value="">기사</option>
-										</select>
+										<div class="sel-box">
+											<select name="s_search" id="s_search" class="form-select" title="분류선택">
+												<option value="">전체</option>
+												<option value="">공지</option>
+												<option value="">기사</option>
+											</select>
+										</div>
 									</div>
 									<div class="searchbox">
-										<input name="s_text" type="text" id="s_text"value="<%=s_text%>"/>
+										<input name="s_text" type="text" id="s_text" value="<%=s_text%>" title="검색어">
 										<a href="#" id="search_btn">검색</a>
 									</div>
 								</div>
-								<div class="board-table list">
+								<div class="board-table">
 									<table >
 										<caption>
 											크라우드펀딩 소식 게시판 : 번호, 분류, 제목, 일자
@@ -332,6 +335,37 @@
 										</tbody>
 									</table>
 								</div>
+								<div class="pagination-wrap">
+	<ul class="pagination">
+		<li class="first">
+			<a href="#">처음</a>
+		</li>
+		<li class="pre">
+			<a href="#">이전</a>
+		</li>
+		<li class="active">
+			<a href="#">1</a>
+		</li>
+		<li>
+			<a href="#">2</a>
+		</li>
+		<li>
+			<a href="#">3</a>
+		</li>
+		<!--<li>
+			<a href="#">4</a>
+		</li>
+		<li>
+			<a href="#">5</a>
+		</li>-->
+		<li class="next">
+			<a href="#">다음</a>
+		</li>
+		<li class="last">
+			<a href="#">끝</a>
+		</li>
+	</ul>
+</div>
 							</div>
 						</div>
 					</section>
@@ -358,5 +392,10 @@
 
 
 		</div>
+		<script>
+			$(function() {
+				$('.form-select').sSelect();
+			});
+		</script>
 	</body>
 </html>
